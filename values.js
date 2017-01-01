@@ -6,5 +6,8 @@ values =
   "Past Game piece in Kickoff stream",
   "Havabanana Productions",
   "Dean Kamen is wearing denim",
-  "Woodie Flowers in a steampunk costume"
+  "Woodie Flowers in a steampunk costume",
+  "Gracious Professionalism",
+  "Dean's Homework",
+  "Encryption Password is 1337"
 ];
