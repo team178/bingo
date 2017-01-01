@@ -1,10 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 body {
+    font-family: 'Open Sans', sans-serif;
+}
+#header {
+  max-width: 50vw;
+  margin: 0 0 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#steamworks {
+  width: 10vw;
+  float: left;
+}
+
+#board {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+
+
 table {
   display: inline-block;
   width: 75vw;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
