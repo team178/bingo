@@ -3,7 +3,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 #header {
-  max-width: 50vw;
+  max-width: 20vmax;
   margin: 0 0 5vh;
   margin-left: auto;
   margin-right: auto;
@@ -11,7 +11,7 @@ body {
 }
 
 #steamworks {
-  width: 10vw;
+  width: 20vmax;
   float: left;
 }
 
