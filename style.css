@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+table {
+  display: inline-block;
+  width: 75vw;
+}
