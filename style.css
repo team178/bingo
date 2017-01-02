@@ -98,9 +98,3 @@ table {
   width: 75vw;
   font-size: 1.5em;
 }
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
