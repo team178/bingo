@@ -1,5 +1,5 @@
-# FRCBINGO
-Fun Robotics Bingo!
+# bingo
+A fun FRC bingo!
 
 ### How to run locally
 This assumes you already have Jekyll set up; if you don't, head [here](https://github.com/team178/team178.github.io#running-locally).
