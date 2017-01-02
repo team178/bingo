@@ -1,18 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+@font-face {
+  font-family: Skorzhen;
+  src: url(./assets/fonts/FTY-SKORZHEN-NCV.ttf);
+  font-weight: bold;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
 #header {
-  max-width: 20vmax;
   margin: 0 0 5vh;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  font-family: Skorzhen;
+  margin: 2vw;
+  font-size: 2em;
 }
 
 #steamworks {
   width: 20vmax;
+  max-width: 300px;
   float: left;
+}
+
+#controls {
+  float: right;
 }
 
 #board {
@@ -31,4 +49,30 @@ table {
   content: "";
   display: table;
   clear: both;
+}
+
+.btn {
+  background: #1A245B;
+  background-image: -webkit-linear-gradient(top, #1A245B, #0F0838);
+  background-image: -moz-linear-gradient(top, #1A245B, #0F0838);
+  background-image: -ms-linear-gradient(top, #1A245B, #0F0838);
+  background-image: -o-linear-gradient(top, #1A245B, #0F0838);
+  background-image: linear-gradient(to bottom, #1A245B, #0F0838);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  color: #FFD000;
+  font-size: 20px;
+  margin: 1px;
+  padding: 7.5px 12.5px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #E5BB00;
+  background-image: -webkit-linear-gradient(top, #E5BB00, #C09000);
+  background-image: -moz-linear-gradient(top, #E5BB00, #C09000);
+  background-image: -ms-linear-gradient(top, #E5BB00, #C09000);
+  background-image: -o-linear-gradient(top, #E5BB00, #C09000);
+  background-image: linear-gradient(to bottom, #E5BB00, #C09000);
+  color: #1A245B;
 }
