@@ -40,7 +40,12 @@ body {
   justify-content: space-around;
 }
 
-/* Buttons */
+/* Buttons
+Based off of these examples:
+http://cssdeck.com/labs/nice-structured-buttons-easy-to-change
+https://codepen.io/simurai/pen/DwJdq?css-preprocessor=stylus
+*/
+
 .button {
 	position: relative;
 	border: none;
