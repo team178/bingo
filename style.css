@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
 
 @font-face {
   font-family: Skorzhen;
@@ -7,8 +8,9 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Crimson Text', serif;
 }
+
 #header {
   margin: 0 0 5vh;
   text-align: center;
@@ -43,6 +45,7 @@ body {
 table {
   display: inline-block;
   width: 75vw;
+  font-size: 1.5em;
 }
 
 .group:after {
@@ -62,7 +65,7 @@ table {
   -moz-border-radius: 7px;
   border-radius: 7px;
   color: #FFD000;
-  font-size: 20px;
+  font-size: 25px;
   margin: 1px;
   padding: 7.5px 12.5px;
   text-decoration: none;
