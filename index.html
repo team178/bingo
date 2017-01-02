@@ -1,6 +1,7 @@
 <head>
   <link rel="stylesheet" href="./style.css" />
-  <script type="text/javascript" src="./values.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="./bingo.js"></script>
 </head>
 
 <body>
@@ -11,11 +12,14 @@
       <h3>2017 Edition</h3>
     </div>
     <div id="controls">
-      <div class="button"><div>Randomize</div></div><br>
+      <div class="button" onclick="createBoard()"><div>Randomize</div></div><br>
       <div class="button"><div>Custom</div></div><br>
       <div class="button"><div>Instructions</div></div><br>
     </div>
   </div>
+  <div id="board">
+  </div>
+  <br />
   <div id="board">
     <table class="rtable">
       <tbody>
