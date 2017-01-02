@@ -17,7 +17,6 @@ values =
   "One of the animation robots has a plunger",
   "The team eats a meal together",
   "Someone in the room tweets and ends up in the livestream",
-  "Former game pieces show up",
   "Someone references previous year's game",
   "Sponsor animation loops more than once",
   "Rule update before the end of the day"  
