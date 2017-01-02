@@ -34,6 +34,7 @@ body {
 }
 
 #controls {
+  margin-left: 15px;
   float: right;
   display: flex;
   flex-direction: column;
