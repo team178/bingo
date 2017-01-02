@@ -14,7 +14,6 @@ body {
 /* Header Elements*/
 
 #header {
-  margin: 0 0 5vh;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -94,7 +93,18 @@ https://codepen.io/simurai/pen/DwJdq?css-preprocessor=stylus
 
 
 table {
+  border: 2px solid #62392D;
   display: inline-block;
-  width: 75vw;
+
   font-size: 1.5em;
+  text-align: center;
+}
+
+td {
+  border: 2px solid #62392D;
+  width: 8vw;
+  height: 8vw;
+  min-width: 175px;
+  min-height: 175px;
+  overflow: hidden;
 }
