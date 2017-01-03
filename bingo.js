@@ -57,7 +57,7 @@ function generateBoard() {
 function createBoard() {
   var board = generateBoard();
   var container = document.getElementById('board');
-  $(container).html("");
+  $(container).html('');
   $(container).append(board);
 }
 
@@ -70,6 +70,7 @@ function showInstructions(){
 }
 
 function checkForWin(){
+  var bingo = false;
   var checked = $('input:checkbox:checked');
 
   var allchecked = "";
@@ -88,17 +89,28 @@ function checkForWin(){
   ((allchecked.match(/c3/g) || []).length) == 5 ||
   ((allchecked.match(/c4/g) || []).length) == 5){
     console.log('yer a winner harry');
-    return true;
+    bingo = true;
   } else {
     if(allchecked.includes("r0c0")&&allchecked.includes("r1c1")&&allchecked.includes("r2c2")&&allchecked.includes("r3c3")&&allchecked.includes("r4c4")){
       console.log('still a winner harry - backward diagonal');
-      return true;
+      bingo = true;
     } else if(allchecked.includes("r0c4")&&allchecked.includes("r1c3")&&allchecked.includes("r2c2")&&allchecked.includes("r3c1")&&allchecked.includes("r4c0")){
       console.log('still a winner harry - forward diagonal');
-      return true;
+      bingo = true;
+    } else {
+      bingo = false;
     }
   }
+  toggleBingoButton(bingo);
 }
+function toggleBingoButton(bingo) {
+  if(bingo == true) {
+    $(".bingo").css('display', 'block');
+  } else {
+    $(".bingo").css('display', 'none');
+  }
+}
+
 $( window ).load(function() {
   showInstructions();
   createBoard();
