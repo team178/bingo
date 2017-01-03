@@ -47,20 +47,20 @@ https://codepen.io/simurai/pen/DwJdq?css-preprocessor=stylus
 */
 
 .button {
-	position: relative;
-	border: none;
-	display: inline-block;
-	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
-			    inset 0px -5px 0px 0px rgba(0,0,0,0.3),
-				inset 0px 2px 0px 0px rgba(255,255,255,0.5);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	overflow: hidden;
-	cursor: pointer;
+  position: relative;
+  border: none;
+  display: inline-block;
+  box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
+    inset 0px -5px 0px 0px rgba(0,0,0,0.3),
+    inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
   background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
-      -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
-      -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
 
       linear-gradient(180deg, hsl(0,0%,78%)  0%,
       hsl(0,0%,90%) 47%,
@@ -68,20 +68,20 @@ https://codepen.io/simurai/pen/DwJdq?css-preprocessor=stylus
       hsl(0,0%,70%)100%);
 }
 .button:active {
-	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
-			    inset 0px -2px 0px 0px rgba(0,0,0,0.3),
-				inset 0px 2px 0px 0px rgba(255,255,255,0.5);
-	top: 3px;
+  box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
+    inset 0px -2px 0px 0px rgba(0,0,0,0.3),
+    inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+  top: 3px;
   margin-top: 3px;
 
 }
 .button div {
-	padding: 10px 20px 12px 20px;
-	color: rgba(0,0,0,0.7);
-	text-shadow: 1px 1px 0px rgba(255,255,255,0.4);
+  padding: 10px 20px 12px 20px;
+  color: rgba(0,0,0,0.7);
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.4);
 }
 .button:active div {
-	padding-bottom: 9px;
+  padding-bottom: 9px;
 }
 
 /* Board */

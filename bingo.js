@@ -61,7 +61,10 @@ function generateBoard() {
       var label = document.createElement('label');
       label.innerHTML = term;
       var check = document.createElement('input');
-      $(check).attr("type", "checkbox");
+      $(check).attr('type', 'checkbox');
+      if(term == "FREE SPACE") {
+        $(check).attr('checked', 'true');
+      }
       label.appendChild(check);
       cell[k].appendChild(label);
       row[c].appendChild(cell[k]);
@@ -88,4 +91,7 @@ function showInstructions(){
   });
 }
 
-$( document ).ready(createBoard());
+$( window ).load(function() {
+  showInstructions();
+  createBoard();
+});
