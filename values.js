@@ -23,5 +23,7 @@ values =
   "Someone's theory about the game is right",
   "Bumpers",
   "Can't download the game manual",
-  "The livestream goes down"
+  "The livestream goes down",
+  "Coopertition",
+  "Mentor Appreciation"
 ];
