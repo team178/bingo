@@ -77,7 +77,6 @@ function checkForWin(){
   for (var cb = 0; cb < checked.length; cb++){
     allchecked += $(checked[cb]).attr('name');
   }
-  console.log(allchecked);
   // the stuff inside match is regex and regex is hell so i'm hardcoding it sorry not sorry
   if(((allchecked.match(/r0/g) || []).length) == 5 ||
   ((allchecked.match(/r1/g) || []).length) == 5 ||
@@ -101,7 +100,6 @@ function checkForWin(){
     }
   }
 }
-
 $( window ).load(function() {
   showInstructions();
   createBoard();
