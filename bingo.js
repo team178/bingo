@@ -37,6 +37,8 @@ function generateBoard() {
       $(check).attr('type', 'checkbox');
       if(term == "FREE SPACE") {
         $(check).attr('checked', 'true');
+        $(check).attr('onclick', 'return false;');
+        $(check).attr('onkeydown', 'e = e || window.event; if(e.keyCode !== 9) return false;');
       }
       var tile = document.createElement('div');
       $(tile).attr('class', 'tile');
