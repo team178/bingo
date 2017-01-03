@@ -33,8 +33,10 @@ function generateBoard() {
       label.innerHTML = term;
       var check = document.createElement('input');
       $(check).attr('type', 'checkbox');
+      $(check).attr('id', 'r'+c+'c'+k);
       if(term == "FREE SPACE") {
         $(check).attr('checked', 'true');
+        $(check).click(function(){return false;}); //i cringe as i type this
       }
       label.appendChild(check);
       cell[k].appendChild(label);
