@@ -7,7 +7,7 @@
   font-weight: bold;
 }
 
-body {
+body, button {
     font-family: 'Crimson Text', serif;
 }
 
