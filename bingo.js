@@ -39,12 +39,8 @@ function generateBoard() {
       $(check).click(checkForWin);
       if(term == "FREE SPACE") {
         $(check).attr('checked', 'true');
-<<<<<<< HEAD
-        $(check).click(function(){return false;}); //i cringe as i type this
-=======
         $(check).attr('onclick', 'return false;');
         $(check).attr('onkeydown', 'e = e || window.event; if(e.keyCode !== 9) return false;');
->>>>>>> ec0f2402b7df52b7f83e1fe6623027ff285f0d34
       }
       var tile = document.createElement('div');
       $(tile).attr('class', 'tile');
