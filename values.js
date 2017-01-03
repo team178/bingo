@@ -4,7 +4,7 @@ values =
   "Scholarships - Apply, apply, apply!",
   "Someone mentions Water Game",
   "Past Game piece in Kickoff stream",
-  "Havabanana Productions",
+  "Haveabanana Productions",
   "Dean Kamen is wearing denim",
   "Woodie Flowers in a steampunk costume",
   "Gracious Professionalism",
