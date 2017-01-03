@@ -34,7 +34,9 @@ function generateBoard() {
       $(label).attr('for', 'tile-' + index);
       var check = document.createElement('input');
       $(check).attr('id', 'tile-' + index);
+      $(check).attr('name', 'r' + c + 'c' + k );
       $(check).attr('type', 'checkbox');
+      $(check).click(checkForWin);
       if(term == "FREE SPACE") {
         $(check).attr('checked', 'true');
         $(check).attr('onclick', 'return false;');
@@ -66,6 +68,38 @@ function showInstructions(){
     text: 'Welcome to FRC Kickoff Bingo! Fill out a card and get excited for FIRST STEAMWORKS! Whenever something said or done matches your bingo card, click on the box to check it off. If you get 5 in a row in any direction - vertical, horizontal, or diagonal, click the BINGO button to win!',
     confirmButtonText: 'Let\'s play!'
   });
+}
+
+function checkForWin(){
+  var checked = $('input:checkbox:checked');
+
+  var allchecked = "";
+  for (var cb = 0; cb < checked.length; cb++){
+    allchecked += $(checked[cb]).attr('name');
+  }
+  console.log(allchecked);
+  // the stuff inside match is regex and regex is hell so i'm hardcoding it sorry not sorry
+  if(((allchecked.match(/r0/g) || []).length) == 5 ||
+  ((allchecked.match(/r1/g) || []).length) == 5 ||
+  ((allchecked.match(/r3/g) || []).length) == 5 ||
+  ((allchecked.match(/r2/g) || []).length) == 5 ||
+  ((allchecked.match(/r4/g) || []).length) == 5 ||
+  ((allchecked.match(/c1/g) || []).length) == 5 ||
+  ((allchecked.match(/c0/g) || []).length) == 5 ||
+  ((allchecked.match(/c2/g) || []).length) == 5 ||
+  ((allchecked.match(/c3/g) || []).length) == 5 ||
+  ((allchecked.match(/c4/g) || []).length) == 5){
+    console.log('yer a winner harry');
+    return true;
+  } else {
+    if(allchecked.includes("r0c0")&&allchecked.includes("r1c1")&&allchecked.includes("r2c2")&&allchecked.includes("r3c3")&&allchecked.includes("r4c4")){
+      console.log('still a winner harry - backward diagonal');
+      return true;
+    } else if(allchecked.includes("r0c4")&&allchecked.includes("r1c3")&&allchecked.includes("r2c2")&&allchecked.includes("r3c1")&&allchecked.includes("r4c0")){
+      console.log('still a winner harry - forward diagonal');
+      return true;
+    }
+  }
 }
 
 $( window ).load(function() {
