@@ -31,10 +31,9 @@ function generateBoard() {
       index++
       var label = document.createElement('label');
       label.innerHTML = term;
-      $(label).attr('for', 'tile-' + index);
+      $(label).attr('for', 'r' + c + 'c' + k );
       var check = document.createElement('input');
-      $(check).attr('id', 'tile-' + index);
-      $(check).attr('name', 'r' + c + 'c' + k );
+      $(check).attr('id', 'r' + c + 'c' + k );
       $(check).attr('type', 'checkbox');
       $(check).click(checkForWin);
       if(term == "FREE SPACE") {
@@ -75,7 +74,7 @@ function checkForWin(){
 
   var allchecked = "";
   for (var cb = 0; cb < checked.length; cb++){
-    allchecked += $(checked[cb]).attr('name');
+    allchecked += $(checked[cb]).attr('id');
   }
   // the stuff inside match is regex and regex is hell so i'm hardcoding it sorry not sorry
   if(((allchecked.match(/r0/g) || []).length) == 5 ||
