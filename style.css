@@ -72,6 +72,7 @@ https://codepen.io/simurai/pen/DwJdq?css-preprocessor=stylus
 
 }
 .button div {
+  font-size: 25px;
   padding: 10px 20px 12px 20px;
   color: rgba(0,0,0,0.7);
   text-shadow: 1px 1px 0px rgba(255,255,255,0.4);
@@ -108,7 +109,6 @@ td {
 /* Tiles */
 input[type=checkbox] {
   position: absolute;
-  top: -9999px;
   left: -9999px;
 }
 
