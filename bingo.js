@@ -62,6 +62,9 @@ function generateBoard() {
       label.innerHTML = term;
       var check = document.createElement('input');
       $(check).attr('type', 'checkbox');
+      if(term == "FREE SPACE") {
+        $(check).attr('checked', 'true');
+      }
       label.appendChild(check);
       cell[k].appendChild(label);
       row[c].appendChild(cell[k]);
