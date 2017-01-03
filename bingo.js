@@ -31,13 +31,18 @@ function generateBoard() {
       index++
       var label = document.createElement('label');
       label.innerHTML = term;
+      $(label).attr('for', 'tile-' + index);
       var check = document.createElement('input');
+      $(check).attr('id', 'tile-' + index);
       $(check).attr('type', 'checkbox');
       if(term == "FREE SPACE") {
         $(check).attr('checked', 'true');
       }
-      label.appendChild(check);
-      cell[k].appendChild(label);
+      var tile = document.createElement('div');
+      $(tile).attr('class', 'tile');
+      tile.appendChild(label);
+      cell[k].appendChild(check);
+      cell[k].appendChild(tile);
       row[c].appendChild(cell[k]);
     }
     tbo.appendChild(row[c]);
@@ -49,7 +54,6 @@ function generateBoard() {
 function createBoard() {
   var board = generateBoard();
   var container = document.getElementById('board');
-  console.log(container);
   $(container).html("");
   $(container).append(board);
 }
