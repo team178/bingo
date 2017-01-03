@@ -1,4 +1,5 @@
 <head>
+  <title>FRC Kickoff Bingo</title>
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./assets/sweetalert2/sweetalert2.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -14,12 +15,12 @@
       <h1>FRC Kickoff Bingo!</h1>
       <h3>2017 Edition</h3>
     </div>
-    <div id="controls">
+    <div id="controls" class="unselect">
       <div class="button" onclick="createBoard()"><div>Randomize</div></div><br>
       <div class="button"><div>Custom</div></div><br>
       <div class="button" onclick="showInstructions()"><div>Instructions</div></div><br>
     </div>
   </div>
-  <div id="board">
+  <div id="board" class="unselect">
   </div>
 </body>
