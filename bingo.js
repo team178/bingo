@@ -61,7 +61,7 @@ function generateBoard() {
       var label = document.createElement('label');
       label.innerHTML = term;
       var check = document.createElement('input');
-      $(check).attr("type", "checkbox");
+      $(check).attr('type', 'checkbox');
       label.appendChild(check);
       cell[k].appendChild(label);
       row[c].appendChild(cell[k]);
@@ -80,4 +80,6 @@ function createBoard() {
   $(container).append(board);
 }
 
-$( document ).ready(createBoard());
+$( window ).load(function() {
+  createBoard();
+});
