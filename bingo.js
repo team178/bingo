@@ -80,4 +80,12 @@ function createBoard() {
   $(container).append(board);
 }
 
+function showInstructions(){
+  swal({
+    title: 'FRC Bingo!',
+    text: 'Welcome to FRC Kickoff Bingo! Fill out a card and get excited for FIRST STEAMWORKS! Whenever something said or done matches your bingo card, click on the box to check it off. If you get 5 in a row in any direction - vertical, horizontal, or diagonal, click the BINGO button to win!',
+    confirmButtonText: 'Let\'s play!'
+  });
+}
+
 $( document ).ready(createBoard());
