@@ -45,8 +45,7 @@ function generateBoard() {
   // Creates randomized list of values
   permuteList(values);
   var terms = values.slice(0, 24);
-  terms = terms.splice(terms.length / 2, 0, "FREE SPACE"); // Inserts the free space in the middle
-
+  terms.splice(terms.length/2, 0, "FREE SPACE"); // Inserts the free space in the middle
   var index = 0;
   for (var c = 0; c < num_rows; c++){
     row[c] = document.createElement('tr');
