@@ -19,5 +19,9 @@ values =
   "Someone in the room tweets and ends up in the livestream",
   "Someone references previous year's game",
   "Sponsor animation loops more than once",
-  "Rule update before the end of the day"
+  "Rule update before the end of the day",
+  "Someone's theory about the game is right",
+  "Bumpers",
+  "Can't download the game manual",
+  "The livestream goes down"
 ];
