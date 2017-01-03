@@ -34,6 +34,7 @@ function generateBoard() {
       var check = document.createElement('input');
       $(check).attr('type', 'checkbox');
       $(check).attr('id', 'r'+c+'c'+k);
+      $(check).click(checkForWin);
       if(term == "FREE SPACE") {
         $(check).attr('checked', 'true');
         $(check).click(function(){return false;}); //i cringe as i type this
@@ -63,6 +64,39 @@ function showInstructions(){
     confirmButtonText: 'Let\'s play!'
   });
 }
+
+function checkForWin(){
+  var checked = $('input:checkbox:checked');
+
+  var allchecked = "";
+  for (var cb = 0; cb < checked.length; cb++){
+    allchecked += $(checked[cb]).attr('id');
+  }
+  // the stuff inside match is regex and regex is hell so i'm hardcoding it sorry not sorry
+  if(((allchecked.match(/r0/g) || []).length) == 5 ||
+  ((allchecked.match(/r1/g) || []).length) == 5 ||
+  ((allchecked.match(/r3/g) || []).length) == 5 ||
+  ((allchecked.match(/r2/g) || []).length) == 5 ||
+  ((allchecked.match(/r4/g) || []).length) == 5 ||
+  ((allchecked.match(/c1/g) || []).length) == 5 ||
+  ((allchecked.match(/c0/g) || []).length) == 5 ||
+  ((allchecked.match(/c2/g) || []).length) == 5 ||
+  ((allchecked.match(/c3/g) || []).length) == 5 ||
+  ((allchecked.match(/c4/g) || []).length) == 5){
+    console.log('yer a winner harry');
+    return true;
+  } else {
+    if(allchecked.includes("r0c0")&&allchecked.includes("r1c1")&&allchecked.includes("r2c2")&&allchecked.includes("r3c3")&&allchecked.includes("r4c4")){
+      console.log('still a winner harry - backward diagonal');
+      return true;
+    } else if(allchecked.includes("r0c4")&&allchecked.includes("r1c3")&&allchecked.includes("r2c2")&&allchecked.includes("r3c1")&&allchecked.includes("r4c0")){
+      console.log('still a winner harry - forward diagonal');
+      return true;
+    }
+  }
+}
+
+
 
 $( window ).load(function() {
   showInstructions();
