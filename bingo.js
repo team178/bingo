@@ -26,11 +26,9 @@ function generateBoard(container) {
   headerRow.setAttribute('id', 'boardHeader');
     var content = 'BINGO';
     for (var i = 0; i < content.length; i++) {
-      var headerSpan = document.createElement('span');
-      $(headerSpan).text(content.charAt(i));
       var headerTile = document.createElement('div');
+      $(headerTile).text(content.charAt(i));
       $(headerTile).attr('class', 'tile');
-      headerTile.appendChild(headerSpan);
       headerRow.appendChild(headerTile);
     }
   container.append(headerRow);
@@ -51,15 +49,15 @@ function generateBoard(container) {
         $(check).attr('id', 'r' + r + 'c' + t );
         $(check).attr('type', 'checkbox');
         $(check).click(checkForWin);
-
-      if(term == "FREE SPACE") {
-        $(check).attr('checked', 'true');
-        $(check).attr('onclick', 'return false;');
-        $(check).attr('onkeydown', 'e = e || window.event; if(e.keyCode !== 9) return false;');
-      }
-
       var tile = document.createElement('div');
         $(tile).attr('class', 'tile');
+
+        if(term == "FREE SPACE") {
+          $(check).attr('checked', 'true');
+          $(check).attr('onclick', 'return false;');
+          $(check).attr('onkeydown', 'e = e || window.event; if(e.keyCode !== 9) return false;');
+          $(tile).attr('id', 'freeSpace');
+        }
 
       tile.appendChild(label);
       row[r].appendChild(check);
@@ -119,9 +117,9 @@ function checkForWin(){
 }
 function toggleBingoButton(bingo) {
   if(bingo == true) {
-    $(".bingo").css('display', 'block');
+    $("#freeSpace").html('<div class="button" id="bingo"><div>BINGO!</div><i class="shine" id="shine1"></i><i class="shine" id="shine2"></i></div>');
   } else {
-    $(".bingo").css('display', 'none');
+    $("#freeSpace").html('<label for="r2c2">FREE SPACE</label>');
   }
 }
 

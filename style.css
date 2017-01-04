@@ -81,10 +81,16 @@ https://codepen.io/simurai/pen/DwJdq?css-preprocessor=stylus
   padding-bottom: 9px;
 }
 
-.bingo {
-  font-size: 50px !important;
+#bingo {
   font-family: Skorzhen;
-  /*margin-bottom: -10px;*/
+  width: 8vw;
+  min-width: 130px;
+  padding: .5vw;
+  margin-top: 37px;
+}
+#bingo div {
+  padding: 10px 0px !important;
+  font-size: 35px !important;
 }
 
 i.shine {
@@ -200,13 +206,8 @@ i.shine {
   min-width: 130px;
 }
 #boardHeader > .tile:hover {
-  background-color: #fff;
+  background-color: inherit;
 }
-.tile > span {
-  display: block;
-  /*margin-bottom: -.23em;*/
-}
-
 
 /* Tiles */
 input[type=checkbox] {
