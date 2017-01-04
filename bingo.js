@@ -26,9 +26,11 @@ function generateBoard(container) {
   headerRow.setAttribute('id', 'boardHeader');
     var content = 'BINGO';
     for (var i = 0; i < content.length; i++) {
+      var headerSpan = document.createElement('span');
+      $(headerSpan).text(content.charAt(i));
       var headerTile = document.createElement('div');
-      $(headerTile).text(content.charAt(i));
       $(headerTile).attr('class', 'tile');
+      headerTile.appendChild(headerSpan);
       headerRow.appendChild(headerTile);
     }
   container.append(headerRow);
@@ -124,6 +126,6 @@ function toggleBingoButton(bingo) {
 }
 
 $( window ).load(function() {
-  showInstructions();
+  /*showInstructions();*/
   createBoard();
 });

@@ -186,7 +186,10 @@ i.shine {
   display: flex;
   flex-direction: row;
 }
-
+#boardHeader {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
 #boardHeader > .tile {
   font-family: Skorzhen;
   font-size: 3em;
@@ -196,8 +199,12 @@ i.shine {
   width: 8vw;
   min-width: 130px;
 }
+#boardHeader > .tile:hover {
+  background-color: #fff;
+}
 .tile > span {
-
+  display: block;
+  margin-bottom: -.23em;
 }
 
 
