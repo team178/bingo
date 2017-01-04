@@ -173,22 +173,19 @@ i.slash2 {
 
 /* Board */
 #board {
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-
-table {
-  border: 2px solid #62392D;
-  display: inline-block;
 
   font-size: 1.5em;
   text-align: center;
 }
 
-td {
-  border: 2px solid #62392D;
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
 /* Tiles */
@@ -198,14 +195,14 @@ input[type=checkbox] {
 }
 
 .tile {
-  height: 100%;
-  vertical-align: middle;
+  border: 2px solid #62392D;
+  margin: .2vw;
 }
 
 label {
+  padding: .5vw;
   display: block;
   min-height: 100%;
-  vertical-align: middle;
   overflow: hidden;
   width: 8vw;
   height: 8vw;
@@ -213,7 +210,7 @@ label {
   min-height: 130px;
 }
 
-input[type=checkbox]:checked ~ div {
+input[type=checkbox]:checked + div {
   background-color: #aaa; /* The most simple styling... */
 }
 
