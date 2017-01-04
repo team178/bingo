@@ -243,3 +243,12 @@ div.tile:hover {
             user-select: none; /* Non-prefixed version, currently
                                   not supported by any browser */
 }
+
+
+#social-share {
+  display: none;
+}
+
+.swal2-content #social-share {
+  display: block;
+}

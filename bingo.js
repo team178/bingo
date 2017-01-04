@@ -87,7 +87,7 @@ function showWin(){
     text: 'Congratulations, you did it!\n',
     confirmButtonText: 'Play again!',
     onOpen: function(){
-      $('#win-tweet').appendTo('.swal2-content');
+      $('#social-share').appendTo('.swal2-content');
     },
     onClose: createBoard
   });
