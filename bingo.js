@@ -55,6 +55,7 @@ function generateBoard() {
 }
 
 function createBoard() {
+  toggleBingoButton(false);
   var board = generateBoard();
   var container = document.getElementById('board');
   $(container).html('');
