@@ -9,56 +9,55 @@ function permuteList(list) { // Creates randomly ordered version of list
   }
 }
 
-function generateBoard() {
+function generateBoard(container) {
   var row = [];
-  var cell = [];
   var num_rows = 5;
 
-  // Creates table
-  var tab = document.createElement('table');
-  var tbo = document.createElement('tbody');
+  // Empties old table container
+  container.html('');
 
   // Creates randomized list of values
   permuteList(values);
-  var terms = values.slice(0, 24);
+  var terms = values.slice(0, 24); // get only 25 values
   terms.splice(terms.length/2, 0, "FREE SPACE"); // Inserts the free space in the middle
-  var index = 0;
-  for (var c = 0; c < num_rows; c++){
-    row[c] = document.createElement('tr');
-    for (k = 0; k < num_rows; k++) {
-      cell[k] = document.createElement('td');
-      var term = terms[index];
-      index++
+
+  var termindex = 0;
+  for (var r = 0; r < num_rows; r++){ //r is for row
+    row[r] = document.createElement('div');
+    row[r].className = "row";
+
+    for (t = 0; t < num_rows; t++) { // t is for tile
+      var term = terms[termindex];
+      termindex++;
+
       var label = document.createElement('label');
-      label.innerHTML = term;
-      $(label).attr('for', 'r' + c + 'c' + k );
+        label.innerHTML = term;
+        $(label).attr('for', 'r' + r + 'c' + t);
       var check = document.createElement('input');
-      $(check).attr('id', 'r' + c + 'c' + k );
-      $(check).attr('type', 'checkbox');
-      $(check).click(checkForWin);
+        $(check).attr('id', 'r' + r + 'c' + t );
+        $(check).attr('type', 'checkbox');
+        $(check).click(checkForWin);
+
       if(term == "FREE SPACE") {
         $(check).attr('checked', 'true');
         $(check).attr('onclick', 'return false;');
         $(check).attr('onkeydown', 'e = e || window.event; if(e.keyCode !== 9) return false;');
       }
+
       var tile = document.createElement('div');
-      $(tile).attr('class', 'tile');
+        $(tile).attr('class', 'tile');
+
       tile.appendChild(label);
-      cell[k].appendChild(check);
-      cell[k].appendChild(tile);
-      row[c].appendChild(cell[k]);
+      row[r].appendChild(check);
+      row[r].appendChild(tile);
     }
-    tbo.appendChild(row[c]);
+    container.append(row[r]);
   }
-  tab.appendChild(tbo);
-  return tab;
 }
 
 function createBoard() {
-  var board = generateBoard();
-  var container = document.getElementById('board');
-  $(container).html('');
-  $(container).append(board);
+  var container = $("#board"); // same as document.getElementById('board');
+  var board = generateBoard(container);
 }
 
 function showInstructions(){
