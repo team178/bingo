@@ -84,9 +84,11 @@ function showInstructions(){
 function showWin(){
   swal({
     title: 'BINGO!',
-    text: 'Congratulations, you did it!',
-    html: '<a href="https://twitter.com/share" class="twitter-share-button" data-text="BINGO!#omgrobots #FIRSTSTEAMWORKS" data-url="http://farmingtonrobotics.org/bingo/" data-via="team178" data-related="FIRSTweets" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>',
+    text: 'Congratulations, you did it!\n',
     confirmButtonText: 'Play again!',
+    onOpen: function(){
+      $('#win-tweet').appendTo('.swal2-content');
+    },
     onClose: createBoard
   });
 }
