@@ -87,7 +87,7 @@ https://codepen.io/simurai/pen/DwJdq?css-preprocessor=stylus
   margin-bottom: -10px;
 }
 
-i {
+i.shine {
 /* positioning */
   position: absolute;
   opacity: 0;
@@ -128,10 +128,10 @@ i {
   -o-animation-iteration-count: infinite;
   -o-animation-delay: 1s;
 }
-i.slash1 {
+#shine1 {
   width: 10%;
 }
-i.slash2 {
+#shine2 {
   margin-left: -15px;
   width: 20%;
 }
