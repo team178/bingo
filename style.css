@@ -192,10 +192,6 @@ i.shine {
   display: flex;
   flex-direction: row;
 }
-#boardHeader {
-  border: 2px solid black;
-  border-collapse: collapse;
-}
 #boardHeader > .tile {
   font-family: Skorzhen;
   font-size: 3em;
