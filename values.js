@@ -37,5 +37,8 @@ values =
   "Field component plans don't make sense",
   "People argue about a basic rule",
   "Swerve Drive",
-  "Game pieces are used incorrectly"
+  "Game pieces are used incorrectly",
+  "Water game is <i>actually</i> confirmed",
+  '"Has anyone checked Chief Delphi yet?"',
+  "War flashbacks to Recycle Rush"
 ];
