@@ -84,7 +84,7 @@ https://codepen.io/simurai/pen/DwJdq?css-preprocessor=stylus
 .bingo {
   font-size: 50px !important;
   font-family: Skorzhen;
-  margin-bottom: -10px;
+  /*margin-bottom: -10px;*/
 }
 
 i.shine {
@@ -204,7 +204,7 @@ i.shine {
 }
 .tile > span {
   display: block;
-  margin-bottom: -.23em;
+  /*margin-bottom: -.23em;*/
 }
 
 
