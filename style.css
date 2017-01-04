@@ -173,7 +173,6 @@ i.shine {
 
 /* Board */
 #board {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,6 +186,20 @@ i.shine {
   display: flex;
   flex-direction: row;
 }
+
+#boardHeader > .tile {
+  font-family: Skorzhen;
+  font-size: 3em;
+
+  padding: .5vw;
+  overflow: hidden;
+  width: 8vw;
+  min-width: 130px;
+}
+.tile > span {
+
+}
+
 
 /* Tiles */
 input[type=checkbox] {
@@ -202,7 +215,6 @@ input[type=checkbox] {
 label {
   padding: .5vw;
   display: block;
-  min-height: 100%;
   overflow: hidden;
   width: 8vw;
   height: 8vw;

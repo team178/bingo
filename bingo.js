@@ -21,6 +21,18 @@ function generateBoard(container) {
   var terms = values.slice(0, 24); // get only 25 values
   terms.splice(terms.length/2, 0, "FREE SPACE"); // Inserts the free space in the middle
 
+  var headerRow = document.createElement('div');
+  headerRow.setAttribute('class', 'row');
+  headerRow.setAttribute('id', 'boardHeader');
+    var content = 'BINGO';
+    for (var i = 0; i < content.length; i++) {
+      var headerTile = document.createElement('div');
+      $(headerTile).text(content.charAt(i));
+      $(headerTile).attr('class', 'tile');
+      headerRow.appendChild(headerTile);
+    }
+  container.append(headerRow);
+
   var termindex = 0;
   for (var r = 0; r < num_rows; r++){ //r is for row
     row[r] = document.createElement('div');
