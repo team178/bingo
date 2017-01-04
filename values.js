@@ -24,6 +24,18 @@ values =
   "Bumpers",
   "Can't download the game manual",
   "The livestream goes down",
-  "Coopertition",
-  "Mentor Appreciation"
+  "Coopertition?",
+  "Mentor Appreciation",
+  "Someone asks when food will be ready",
+  "FRC related song parody",
+  "Last year's design is referenced while brainstorming",
+  "Someone is angry at GitHub",
+  "Someone has a breakdown because of awards",
+  "Battle Bots",
+  "At least one person quits",
+  "Someone wonders about scouting",
+  "Field component plans don't make sense",
+  "People argue about a basic rule",
+  "Swerve Drive",
+  "Game pieces are used incorrectly"
 ];
