@@ -189,11 +189,6 @@ table {
 
 td {
   border: 2px solid #62392D;
-  width: 8vw;
-  height: 8vw;
-  min-width: 175px;
-  min-height: 175px;
-  overflow: hidden;
 }
 
 /* Tiles */
@@ -211,6 +206,11 @@ label {
   display: block;
   min-height: 100%;
   vertical-align: middle;
+  overflow: hidden;
+  width: 8vw;
+  height: 8vw;
+  min-width: 130px;
+  min-height: 130px;
 }
 
 input[type=checkbox]:checked ~ div {
