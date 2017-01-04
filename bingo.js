@@ -81,6 +81,15 @@ function showInstructions(){
   });
 }
 
+function showWin(){
+  swal({
+    title: 'BINGO!',
+    text: 'Congratulations, you did it!',
+    confirmButtonText: 'Play again!',
+    onClose: createBoard
+  });
+}
+
 function checkForWin(){
   var bingo = false;
   var checked = $('input:checkbox:checked');
@@ -118,6 +127,7 @@ function checkForWin(){
 function toggleBingoButton(bingo) {
   if(bingo == true) {
     $("#freeSpace").html('<div class="button" id="bingo"><div>BINGO!</div><i class="shine" id="shine1"></i><i class="shine" id="shine2"></i></div>');
+    $("#bingo").click(showWin);
   } else {
     $("#freeSpace").html('<label for="r2c2">FREE SPACE</label>');
   }
