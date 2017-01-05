@@ -84,10 +84,14 @@ function showInstructions(){
 function showWin(){
   swal({
     title: 'BINGO!',
-    text: 'Congratulations, you did it!\n',
+    text: 'Congratulations, you did it! Here\'s to an awesome build season. Share your BINGO win with your friends:\n\n',
     confirmButtonText: 'Play again!',
     onOpen: function(){
+      $('<div></div>').attr("id","confetti").appendTo('.swal2-content');
       $('#social-share').appendTo('.swal2-content');
+      for(var i = 0; i < 50; i++){
+        $('#confetti').append($('<i></i>'));
+      }
     },
     onClose: createBoard
   });
