@@ -87,7 +87,7 @@ function showWin(){
     text: 'Congratulations, you did it! Here\'s to an awesome build season. Share your BINGO win with your friends:\n\n',
     confirmButtonText: 'Play again!',
     onOpen: function(){
-      $('<div></div>').attr("id","confetti").appendTo('.swal2-content');
+      $('<div></div>').attr("id","confetti").appendTo('.swal2-title');
       $('#social-share').appendTo('.swal2-content');
       for(var i = 0; i < 50; i++){
         $('#confetti').append($('<i></i>'));
