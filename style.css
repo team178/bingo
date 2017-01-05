@@ -290,6 +290,9 @@ div.tile:hover {
   height: 5px;
   background: red;
   opacity: 0;
+  -webkit-animation: bang 700ms ease-out forwards;
+  -moz-animation: bang 700ms ease-out forwards;
+  animation: bang 700ms ease-out forwards;
 }
 /* looks better in SCSS */
 
@@ -300,10 +303,6 @@ div.tile:hover {
   -o-transform: translate3d(-58px, -53px, 0) rotate(136deg);
   transform: translate3d(-58px, -53px, 0) rotate(136deg);
   background: #ff0095;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(2) {
   -webkit-transform: translate3d(20px, -96px, 0) rotate(311deg);
@@ -312,10 +311,6 @@ div.tile:hover {
   -o-transform: translate3d(20px, -96px, 0) rotate(311deg);
   transform: translate3d(20px, -96px, 0) rotate(311deg);
   background: #008cff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(3) {
   -webkit-transform: translate3d(-89px, -99px, 0) rotate(121deg);
@@ -324,10 +319,6 @@ div.tile:hover {
   -o-transform: translate3d(-89px, -99px, 0) rotate(121deg);
   transform: translate3d(-89px, -99px, 0) rotate(121deg);
   background: #ff0d00;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(4) {
   -webkit-transform: translate3d(-15px, -67px, 0) rotate(120deg);
@@ -336,10 +327,6 @@ div.tile:hover {
   -o-transform: translate3d(-15px, -67px, 0) rotate(120deg);
   transform: translate3d(-15px, -67px, 0) rotate(120deg);
   background: #ff9900;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(5) {
   -webkit-transform: translate3d(39px, -93px, 0) rotate(330deg);
@@ -348,10 +335,6 @@ div.tile:hover {
   -o-transform: translate3d(39px, -93px, 0) rotate(330deg);
   transform: translate3d(39px, -93px, 0) rotate(330deg);
   background: #04ff00;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(6) {
   -webkit-transform: translate3d(-29px, -92px, 0) rotate(326deg);
@@ -360,10 +343,6 @@ div.tile:hover {
   -o-transform: translate3d(-29px, -92px, 0) rotate(326deg);
   transform: translate3d(-29px, -92px, 0) rotate(326deg);
   background: #ff3700;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(7) {
   -webkit-transform: translate3d(-5px, -65px, 0) rotate(222deg);
@@ -372,10 +351,6 @@ div.tile:hover {
   -o-transform: translate3d(-5px, -65px, 0) rotate(222deg);
   transform: translate3d(-5px, -65px, 0) rotate(222deg);
   background: #a200ff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(8) {
   -webkit-transform: translate3d(-52px, -54px, 0) rotate(119deg);
@@ -384,10 +359,6 @@ div.tile:hover {
   -o-transform: translate3d(-52px, -54px, 0) rotate(119deg);
   transform: translate3d(-52px, -54px, 0) rotate(119deg);
   background: #ffc800;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(9) {
   -webkit-transform: translate3d(-35px, -93px, 0) rotate(69deg);
@@ -396,10 +367,6 @@ div.tile:hover {
   -o-transform: translate3d(-35px, -93px, 0) rotate(69deg);
   transform: translate3d(-35px, -93px, 0) rotate(69deg);
   background: #e6ff00;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(10) {
   -webkit-transform: translate3d(14px, -70px, 0) rotate(281deg);
@@ -408,10 +375,6 @@ div.tile:hover {
   -o-transform: translate3d(14px, -70px, 0) rotate(281deg);
   transform: translate3d(14px, -70px, 0) rotate(281deg);
   background: #ff8000;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(11) {
   -webkit-transform: translate3d(86px, -79px, 0) rotate(328deg);
@@ -420,10 +383,6 @@ div.tile:hover {
   -o-transform: translate3d(86px, -79px, 0) rotate(328deg);
   transform: translate3d(86px, -79px, 0) rotate(328deg);
   background: #6a00ff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(12) {
   -webkit-transform: translate3d(-46px, -58px, 0) rotate(177deg);
@@ -432,10 +391,6 @@ div.tile:hover {
   -o-transform: translate3d(-46px, -58px, 0) rotate(177deg);
   transform: translate3d(-46px, -58px, 0) rotate(177deg);
   background: #00ff55;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(13) {
   -webkit-transform: translate3d(-1px, -86px, 0) rotate(85deg);
@@ -444,10 +399,6 @@ div.tile:hover {
   -o-transform: translate3d(-1px, -86px, 0) rotate(85deg);
   transform: translate3d(-1px, -86px, 0) rotate(85deg);
   background: #ff00e1;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(14) {
   -webkit-transform: translate3d(87px, -68px, 0) rotate(283deg);
@@ -456,10 +407,6 @@ div.tile:hover {
   -o-transform: translate3d(87px, -68px, 0) rotate(283deg);
   transform: translate3d(87px, -68px, 0) rotate(283deg);
   background: #ff00f7;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(15) {
   -webkit-transform: translate3d(-91px, -74px, 0) rotate(132deg);
@@ -468,10 +415,6 @@ div.tile:hover {
   -o-transform: translate3d(-91px, -74px, 0) rotate(132deg);
   transform: translate3d(-91px, -74px, 0) rotate(132deg);
   background: #3700ff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(16) {
   -webkit-transform: translate3d(-85px, -57px, 0) rotate(63deg);
@@ -480,10 +423,6 @@ div.tile:hover {
   -o-transform: translate3d(-85px, -57px, 0) rotate(63deg);
   transform: translate3d(-85px, -57px, 0) rotate(63deg);
   background: #8800ff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(17) {
   -webkit-transform: translate3d(65px, -74px, 0) rotate(289deg);
@@ -492,10 +431,6 @@ div.tile:hover {
   -o-transform: translate3d(65px, -74px, 0) rotate(289deg);
   transform: translate3d(65px, -74px, 0) rotate(289deg);
   background: #3300ff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(18) {
   -webkit-transform: translate3d(-24px, -89px, 0) rotate(324deg);
@@ -504,10 +439,6 @@ div.tile:hover {
   -o-transform: translate3d(-24px, -89px, 0) rotate(324deg);
   transform: translate3d(-24px, -89px, 0) rotate(324deg);
   background: #00ffc8;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(19) {
   -webkit-transform: translate3d(47px, -93px, 0) rotate(103deg);
@@ -516,10 +447,6 @@ div.tile:hover {
   -o-transform: translate3d(47px, -93px, 0) rotate(103deg);
   transform: translate3d(47px, -93px, 0) rotate(103deg);
   background: #0095ff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(20) {
   -webkit-transform: translate3d(-36px, -72px, 0) rotate(360deg);
@@ -528,10 +455,6 @@ div.tile:hover {
   -o-transform: translate3d(-36px, -72px, 0) rotate(360deg);
   transform: translate3d(-36px, -72px, 0) rotate(360deg);
   background: #51ff00;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(21) {
   -webkit-transform: translate3d(-79px, -88px, 0) rotate(215deg);
@@ -540,10 +463,6 @@ div.tile:hover {
   -o-transform: translate3d(-79px, -88px, 0) rotate(215deg);
   transform: translate3d(-79px, -88px, 0) rotate(215deg);
   background: #ffc800;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(22) {
   -webkit-transform: translate3d(76px, -65px, 0) rotate(38deg);
@@ -552,10 +471,6 @@ div.tile:hover {
   -o-transform: translate3d(76px, -65px, 0) rotate(38deg);
   transform: translate3d(76px, -65px, 0) rotate(38deg);
   background: #ff0022;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(23) {
   -webkit-transform: translate3d(24px, -99px, 0) rotate(26deg);
@@ -564,10 +479,6 @@ div.tile:hover {
   -o-transform: translate3d(24px, -99px, 0) rotate(26deg);
   transform: translate3d(24px, -99px, 0) rotate(26deg);
   background: #33ff00;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(24) {
   -webkit-transform: translate3d(50px, -54px, 0) rotate(119deg);
@@ -576,10 +487,6 @@ div.tile:hover {
   -o-transform: translate3d(50px, -54px, 0) rotate(119deg);
   transform: translate3d(50px, -54px, 0) rotate(119deg);
   background: #00ff91;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(25) {
   -webkit-transform: translate3d(-15px, -77px, 0) rotate(25deg);
@@ -588,10 +495,6 @@ div.tile:hover {
   -o-transform: translate3d(-15px, -77px, 0) rotate(25deg);
   transform: translate3d(-15px, -77px, 0) rotate(25deg);
   background: #ff006f;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(26) {
   -webkit-transform: translate3d(58px, -82px, 0) rotate(353deg);
@@ -600,10 +503,6 @@ div.tile:hover {
   -o-transform: translate3d(58px, -82px, 0) rotate(353deg);
   transform: translate3d(58px, -82px, 0) rotate(353deg);
   background: #00ffb3;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(27) {
   -webkit-transform: translate3d(-69px, -76px, 0) rotate(274deg);
@@ -612,10 +511,6 @@ div.tile:hover {
   -o-transform: translate3d(-69px, -76px, 0) rotate(274deg);
   transform: translate3d(-69px, -76px, 0) rotate(274deg);
   background: #1e00ff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(28) {
   -webkit-transform: translate3d(-47px, -67px, 0) rotate(82deg);
@@ -624,10 +519,6 @@ div.tile:hover {
   -o-transform: translate3d(-47px, -67px, 0) rotate(82deg);
   transform: translate3d(-47px, -67px, 0) rotate(82deg);
   background: #00ffaa;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(29) {
   -webkit-transform: translate3d(-24px, -89px, 0) rotate(48deg);
@@ -636,10 +527,6 @@ div.tile:hover {
   -o-transform: translate3d(-24px, -89px, 0) rotate(48deg);
   transform: translate3d(-24px, -89px, 0) rotate(48deg);
   background: #00ff4d;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(30) {
   -webkit-transform: translate3d(5px, -51px, 0) rotate(143deg);
@@ -648,10 +535,6 @@ div.tile:hover {
   -o-transform: translate3d(5px, -51px, 0) rotate(143deg);
   transform: translate3d(5px, -51px, 0) rotate(143deg);
   background: #ff0044;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(31) {
   -webkit-transform: translate3d(-26px, -61px, 0) rotate(109deg);
@@ -660,10 +543,6 @@ div.tile:hover {
   -o-transform: translate3d(-26px, -61px, 0) rotate(109deg);
   transform: translate3d(-26px, -61px, 0) rotate(109deg);
   background: #ffe100;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(32) {
   -webkit-transform: translate3d(79px, -51px, 0) rotate(358deg);
@@ -672,10 +551,6 @@ div.tile:hover {
   -o-transform: translate3d(79px, -51px, 0) rotate(358deg);
   transform: translate3d(79px, -51px, 0) rotate(358deg);
   background: #ff00f2;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(33) {
   -webkit-transform: translate3d(-35px, -73px, 0) rotate(117deg);
@@ -684,10 +559,6 @@ div.tile:hover {
   -o-transform: translate3d(-35px, -73px, 0) rotate(117deg);
   transform: translate3d(-35px, -73px, 0) rotate(117deg);
   background: #aaff00;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(34) {
   -webkit-transform: translate3d(-28px, -87px, 0) rotate(354deg);
@@ -696,10 +567,6 @@ div.tile:hover {
   -o-transform: translate3d(-28px, -87px, 0) rotate(354deg);
   transform: translate3d(-28px, -87px, 0) rotate(354deg);
   background: yellow;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(35) {
   -webkit-transform: translate3d(-86px, -92px, 0) rotate(329deg);
@@ -708,10 +575,6 @@ div.tile:hover {
   -o-transform: translate3d(-86px, -92px, 0) rotate(329deg);
   transform: translate3d(-86px, -92px, 0) rotate(329deg);
   background: #f2ff00;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(36) {
   -webkit-transform: translate3d(26px, -66px, 0) rotate(240deg);
@@ -720,10 +583,6 @@ div.tile:hover {
   -o-transform: translate3d(26px, -66px, 0) rotate(240deg);
   transform: translate3d(26px, -66px, 0) rotate(240deg);
   background: #007bff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(37) {
   -webkit-transform: translate3d(54px, -90px, 0) rotate(326deg);
@@ -732,10 +591,6 @@ div.tile:hover {
   -o-transform: translate3d(54px, -90px, 0) rotate(326deg);
   transform: translate3d(54px, -90px, 0) rotate(326deg);
   background: #00ffd9;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(38) {
   -webkit-transform: translate3d(19px, -84px, 0) rotate(222deg);
@@ -744,10 +599,6 @@ div.tile:hover {
   -o-transform: translate3d(19px, -84px, 0) rotate(222deg);
   transform: translate3d(19px, -84px, 0) rotate(222deg);
   background: red;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(39) {
   -webkit-transform: translate3d(20px, -57px, 0) rotate(186deg);
@@ -756,10 +607,6 @@ div.tile:hover {
   -o-transform: translate3d(20px, -57px, 0) rotate(186deg);
   transform: translate3d(20px, -57px, 0) rotate(186deg);
   background: #ffdd00;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(40) {
   -webkit-transform: translate3d(73px, -66px, 0) rotate(73deg);
@@ -768,10 +615,6 @@ div.tile:hover {
   -o-transform: translate3d(73px, -66px, 0) rotate(73deg);
   transform: translate3d(73px, -66px, 0) rotate(73deg);
   background: #2200ff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(41) {
   -webkit-transform: translate3d(-66px, -66px, 0) rotate(199deg);
@@ -780,10 +623,6 @@ div.tile:hover {
   -o-transform: translate3d(-66px, -66px, 0) rotate(199deg);
   transform: translate3d(-66px, -66px, 0) rotate(199deg);
   background: #ff00ae;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(42) {
   -webkit-transform: translate3d(10px, -87px, 0) rotate(238deg);
@@ -792,10 +631,6 @@ div.tile:hover {
   -o-transform: translate3d(10px, -87px, 0) rotate(238deg);
   transform: translate3d(10px, -87px, 0) rotate(238deg);
   background: #ff1500;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(43) {
   -webkit-transform: translate3d(-3px, -50px, 0) rotate(131deg);
@@ -804,10 +639,6 @@ div.tile:hover {
   -o-transform: translate3d(-3px, -50px, 0) rotate(131deg);
   transform: translate3d(-3px, -50px, 0) rotate(131deg);
   background: #ff4400;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(44) {
   -webkit-transform: translate3d(-18px, -58px, 0) rotate(305deg);
@@ -816,10 +647,6 @@ div.tile:hover {
   -o-transform: translate3d(-18px, -58px, 0) rotate(305deg);
   transform: translate3d(-18px, -58px, 0) rotate(305deg);
   background: #0077ff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(45) {
   -webkit-transform: translate3d(14px, -67px, 0) rotate(280deg);
@@ -828,10 +655,6 @@ div.tile:hover {
   -o-transform: translate3d(14px, -67px, 0) rotate(280deg);
   transform: translate3d(14px, -67px, 0) rotate(280deg);
   background: #00d5ff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(46) {
   -webkit-transform: translate3d(64px, -86px, 0) rotate(252deg);
@@ -840,10 +663,6 @@ div.tile:hover {
   -o-transform: translate3d(64px, -86px, 0) rotate(252deg);
   transform: translate3d(64px, -86px, 0) rotate(252deg);
   background: #00ff99;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(47) {
   -webkit-transform: translate3d(-56px, -67px, 0) rotate(95deg);
@@ -852,10 +671,6 @@ div.tile:hover {
   -o-transform: translate3d(-56px, -67px, 0) rotate(95deg);
   transform: translate3d(-56px, -67px, 0) rotate(95deg);
   background: #ee00ff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(48) {
   -webkit-transform: translate3d(-75px, -71px, 0) rotate(306deg);
@@ -864,10 +679,6 @@ div.tile:hover {
   -o-transform: translate3d(-75px, -71px, 0) rotate(306deg);
   transform: translate3d(-75px, -71px, 0) rotate(306deg);
   background: #e100ff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(49) {
   -webkit-transform: translate3d(16px, -94px, 0) rotate(154deg);
@@ -876,10 +687,6 @@ div.tile:hover {
   -o-transform: translate3d(16px, -94px, 0) rotate(154deg);
   transform: translate3d(16px, -94px, 0) rotate(154deg);
   background: #5500ff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
 #confetti i:nth-of-type(50) {
   -webkit-transform: translate3d(-84px, -89px, 0) rotate(211deg);
@@ -888,8 +695,4 @@ div.tile:hover {
   -o-transform: translate3d(-84px, -89px, 0) rotate(211deg);
   transform: translate3d(-84px, -89px, 0) rotate(211deg);
   background: #f200ff;
-  -webkit-animation: bang 700ms ease-out forwards;
-  -moz-animation: bang 700ms ease-out forwards;
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
 }
