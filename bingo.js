@@ -68,7 +68,7 @@ function generateBoard(container) {
 }
 
 function createBoard() {
-  toggleBingoButton(false);
+  toggleBingoWin(false);
   var container = $("#board"); // same as document.getElementById('board');
   var board = generateBoard(container);
 }
@@ -89,6 +89,7 @@ function showWin(){
     onOpen: function(){
       $('<div></div>').attr("id","confetti").appendTo('.swal2-title');
       $('#social-share').appendTo('.swal2-content');
+      $("body").append('<div id="social-share"><iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Ffarmingtonrobotics.org%2Fbingo%2F&layout=button&size=small&mobile_iframe=true&width=65&height=20&appId" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><a href="https://twitter.com/share" class="twitter-share-button" data-text="BINGO! #omgrobots #FIRSTSTEAMWORKS Play #FRCKickoff Bingo at" data-url="http://farmingtonrobotics.org/bingo/" data-via="team178" data-related="FIRSTweets" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>');
       for(var i = 0; i < 50; i++){
         $('#confetti').append($('<i></i>'));
       }
@@ -129,9 +130,9 @@ function checkForWin(){
       bingo = false;
     }
   }
-  toggleBingoButton(bingo);
+  toggleBingoWin(bingo);
 }
-function toggleBingoButton(bingo) {
+function toggleBingoWin(bingo) {
   if(bingo == true) {
     $("#freeSpace").html('<div class="button" id="bingo"><div>BINGO!</div><i class="shine" id="shine1"></i><i class="shine" id="shine2"></i></div>');
     $("#bingo").click(showWin);
