@@ -247,6 +247,8 @@ div.tile:hover {
 
 #social-share {
   display: none;
+  margin-top: 7px;
+  margin-bottom: -12px;
 }
 
 .swal2-content #social-share {
