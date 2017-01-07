@@ -84,6 +84,7 @@ body, button {
   margin: 5px;
 }
 #footer a {
+  font-weight: normal;
   color: #fff;
   text-decoration: none;
 }
