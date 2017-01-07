@@ -43,8 +43,9 @@ function generateBoard(container) {
       termindex++;
 
       var label = document.createElement('label');
-        label.innerHTML = term;
         $(label).attr('for', 'r' + r + 'c' + t);
+      var span = document.createElement('span');
+        span.innerHTML = term;
       var check = document.createElement('input');
         $(check).attr('id', 'r' + r + 'c' + t );
         $(check).attr('type', 'checkbox');
@@ -59,6 +60,7 @@ function generateBoard(container) {
           $(tile).attr('id', 'freeSpace');
         }
 
+      label.appendChild(span);
       tile.appendChild(label);
       row[r].appendChild(check);
       row[r].appendChild(tile);
@@ -134,10 +136,10 @@ function checkForWin(){
 }
 function toggleBingoWin(bingo) {
   if(bingo == true) {
-    $("#freeSpace").html('<div class="button" id="bingo"><div>BINGO!</div><i class="shine" id="shine1"></i><i class="shine" id="shine2"></i></div>');
+    $("#freeSpace").html('<label><div class="button" id="bingo"><div>BINGO!</div><i class="shine" id="shine1"></i><i class="shine" id="shine2"></i></div></label>');
     $("#bingo").click(showWin);
   } else {
-    $("#freeSpace").html('<label for="r2c2">FREE SPACE</label>');
+    $("#freeSpace").html('<label for="r2c2"><span>FREE SPACE</span></label>');
   }
 }
 

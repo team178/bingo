@@ -9,6 +9,7 @@
 
 body, button {
     font-family: 'Crimson Text', serif;
+    color: #38322F;
 }
 
 /* Header Elements*/
@@ -21,15 +22,16 @@ body, button {
 }
 
 #steamworks {
-  width: 20vmax;
+  width: 17vmax;
   max-width: 300px;
+  min-width: 150px;
   float: left;
 }
 
 #title {
   font-family: Skorzhen;
   margin: 2vw;
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 #controls {
@@ -40,45 +42,29 @@ body, button {
   justify-content: space-around;
 }
 
-/* Buttons
-Based off of these examples:
-http://cssdeck.com/labs/nice-structured-buttons-easy-to-change
-https://codepen.io/simurai/pen/DwJdq?css-preprocessor=stylus
-*/
-
+/* Buttons */
 .button {
   position: relative;
   border: none;
-  display: inline-block;
-  box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
-              inset 0px -5px 0px 0px rgba(0,0,0,0.3),
-              inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+  display: inline;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
-  background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
-                    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
-                    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
-                                      linear-gradient(180deg, hsl(0,0%,78%)  0%, hsl(0,0%,90%) 47%, hsl(0,0%,78%) 53%, hsl(0,0%,70%)100%);
+  background-color: #A77C3C;
+}
+.button:hover {
+  background-color: #BA8A43;
 }
 .button:active {
-  box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
-              inset 0px -2px 0px 0px rgba(0,0,0,0.3),
-              inset 0px 2px 0px 0px rgba(255,255,255,0.5);
-  top: 3px;
-  margin-top: 3px;
-
+  background-color: #C19656;
 }
 .button div {
-  font-size: 25px;
-  padding: 10px 20px 12px 20px;
-  color: rgba(0,0,0,0.7);
-  text-shadow: 1px 1px 0px rgba(255,255,255,0.4);
-}
-.button:active div {
-  padding-bottom: 9px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 15px 12px 15px;
+  color: #fff;
 }
 
 #bingo {
@@ -86,7 +72,6 @@ https://codepen.io/simurai/pen/DwJdq?css-preprocessor=stylus
   width: 8vw;
   min-width: 130px;
   padding: .5vw;
-  margin-top: 37px;
 }
 #bingo div {
   padding: 10px 0px !important;
@@ -100,13 +85,13 @@ i.shine {
   top: 0;
   left: 0;
 
-/* gradient   */
-  background: -moz-linear-gradient(left,rgba(255,255,255,0)0%,rgba(255,255,255,0.045)1%,rgba(255,255,255,0.6)30%,rgba(255,255,255,0.85)50%,rgba(255,255,255,0.95)70%,rgba(255,255,255,0.8)71%,rgba(255,255,255,0)100%);/* FF3.6+ */
-  background: -webkit-gradient(linear,left top, right top,color-stop(0%,rgba(255,255,255,0)),color-stop(1%,rgba(255,255,255,0.045)),color-stop(30%,rgba(255,255,255,0.6)),color-stop(50%,rgba(255,255,255,0.85)),color-stop(70%,rgba(255,255,255,0.95)),color-stop(71%,rgba(255,255,255,0.8)),color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left,rgba(255,255,255,0)0%,rgba(255,255,255,0.045)1%,rgba(255,255,255,0.6)30%,rgba(255,255,255,0.85)50%,rgba(255,255,255,0.95)70%,rgba(255,255,255,0.8)71%,rgba(255,255,255,0)100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left,rgba(255,255,255,0)0%,rgba(255,255,255,0.045)1%,rgba(255,255,255,0.6)30%,rgba(255,255,255,0.85)50%,rgba(255,255,255,0.95)70%,rgba(255,255,255,0.8)71%,rgba(255,255,255,0)100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(left,rgba(255,255,255,0)0%,rgba(255,255,255,0.045)1%,rgba(255,255,255,0.6)30%,rgba(255,255,255,0.85)50%,rgba(255,255,255,0.95)70%,rgba(255,255,255,0.8)71%,rgba(255,255,255,0)100%); /* IE10+ */
-  background: linear-gradient(to right,rgba(255,255,255,0)0%,rgba(255,255,255,0.045)1%,rgba(255,255,255,0.6)30%,rgba(255,255,255,0.85)50%,rgba(255,255,255,0.95)70%,rgba(255,255,255,0.8)71%,rgba(255,255,255,0)100%); /* W3C */
+/* gradients */
+  background: -moz-linear-gradient(left,rgba(255,255,255,0)0%,rgba(255,255,255,0.045)1%,rgba(255,255,255,0.25)15%,rgba(255,255,255,0.6)30%,rgba(255,255,255,0.85)50%,rgba(255,255,255,0.85)70%,rgba(255,255,255,0.8)71%,rgba(255,255,255,0)100%);/* FF3.6+ */
+  background: -webkit-gradient(linear,left top, right top,color-stop(0%,rgba(255,255,255,0)),color-stop(1%,rgba(255,255,255,0.045)),color-stop(15%,rgba(255,255,255,0.25)),color-stop(30%,rgba(255,255,255,0.6)),color-stop(50%,rgba(255,255,255,0.85)),color-stop(70%,rgba(255,255,255,0.85)),color-stop(71%,rgba(255,255,255,0.8)),color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,rgba(255,255,255,0)0%,rgba(255,255,255,0.045)1%,rgba(255,255,255,0.25)15%,rgba(255,255,255,0.6)30%,rgba(255,255,255,0.85)50%,rgba(255,255,255,0.85)70%,rgba(255,255,255,0.8)71%,rgba(255,255,255,0)100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,rgba(255,255,255,0)0%,rgba(255,255,255,0.045)1%,rgba(255,255,255,0.25)15%,rgba(255,255,255,0.6)30%,rgba(255,255,255,0.85)50%,rgba(255,255,255,0.85)70%,rgba(255,255,255,0.8)71%,rgba(255,255,255,0)100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,rgba(255,255,255,0)0%,rgba(255,255,255,0.045)1%,rgba(255,255,255,0.25)15%,rgba(255,255,255,0.6)30%,rgba(255,255,255,0.85)50%,rgba(255,255,255,0.85)70%,rgba(255,255,255,0.8)71%,rgba(255,255,255,0)100%); /* IE10+ */
+  background: linear-gradient(to right,rgba(255,255,255,0)0%,rgba(255,255,255,0.045)1%,rgba(255,255,255,0.25)15%,rgba(255,255,255,0.6)30%,rgba(255,255,255,0.85)50%,rgba(255,255,255,0.85)70%,rgba(255,255,255,0.8)71%,rgba(255,255,255,0)100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
 
 /* forming the shine element play around with the width, skew and gradient to get different effects */
@@ -135,10 +120,10 @@ i.shine {
   -o-animation-delay: 1s;
 }
 #shine1 {
-  width: 10%;
+  width: 15%;
 }
 #shine2 {
-  margin-left: -15px;
+  margin-left: -12px;
   width: 20%;
 }
 @keyframes move {
@@ -195,19 +180,21 @@ i.shine {
 #boardHeader > .tile {
   font-family: Skorzhen;
   font-size: 3em;
-
+  border: none !important;
+  margin-bottom: -10px;
+  color: #62392D;
   padding: .5vw;
-  overflow: hidden;
   width: 8vw;
+  height: auto !important;
   min-width: 130px;
+  min-height: 0px !important;
 }
 #boardHeader > .tile:hover {
-  background-color: inherit;
+  background-color: #fff;
 }
 
 /* Tiles */
 input[type=checkbox] {
-  position: absolute;
   display: none;
 }
 
@@ -217,21 +204,30 @@ input[type=checkbox] {
 }
 
 label {
-  padding: .5vw;
   display: block;
-  overflow: hidden;
   width: 8vw;
   height: 8vw;
   min-width: 130px;
   min-height: 130px;
+  padding: .5vw;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
 }
 
 input[type=checkbox]:checked + div {
-  background-color: #aaa; /* The most simple styling... */
+  background-color: #62392D;
+  color: #fff;
 }
 
 div.tile:hover {
-  background-color: #eee; /* Again, the most simple styling... */
+  background-color: #BA8A43;
 }
 
 .unselect {
@@ -296,8 +292,8 @@ div.tile:hover {
   -moz-animation: bang 700ms ease-out forwards;
   animation: bang 700ms ease-out forwards;
 }
-/* looks better in SCSS */
 
+/* looks better in SCSS */
 #confetti i:nth-of-type(1) {
   -webkit-transform: translate3d(-58px, -53px, 0) rotate(136deg);
   -moz-transform: translate3d(-58px, -53px, 0) rotate(136deg);
