@@ -144,6 +144,6 @@ function toggleBingoWin(bingo) {
 }
 
 $( window ).load(function() {
-  /*showInstructions();*/
+  showInstructions();
   createBoard();
 });
