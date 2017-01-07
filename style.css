@@ -67,6 +67,27 @@ body, button {
   color: #fff;
 }
 
+/* Footer */
+#footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer .button {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 15px 12px 15px;
+  margin: 5px;
+}
+#footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
 #bingo {
   font-family: Skorzhen;
   width: 8vw;
