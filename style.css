@@ -90,13 +90,12 @@ body, button {
 }
 
 #bingo {
-  font-family: Skorzhen;
   width: 8vw;
   min-width: 130px;
   padding: .5vw;
 }
 #bingo div {
-  padding: 10px 0px !important;
+  padding: 5px 0px !important;
   font-size: 35px !important;
 }
 
