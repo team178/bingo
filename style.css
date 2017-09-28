@@ -8,11 +8,19 @@
 }
 
 body, button {
-    font-family: 'Crimson Text', serif;
-    color: #38322F;
+  font-family: 'Crimson Text', serif;
+  color: #000;
 }
 
-/* Header Elements*/
+/* Colors:
+  #cd222a
+  #009cd4
+  #fcf0b3
+  #f3ca31
+  #dc6726
+*/
+
+/* Header Elements */
 
 #header {
   text-align: center;
@@ -52,13 +60,13 @@ body, button {
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #A77C3C;
+  background-color: #009cd4;
 }
 .button:hover {
-  background-color: #BA8A43;
+  background-color: #1AA6D8;
 }
 .button:active {
-  background-color: #C19656;
+  background-color: #33B0DD;
 }
 .button div {
   font-weight: bold;
@@ -203,7 +211,7 @@ i.shine {
   font-size: 3em;
   border: none !important;
   margin-bottom: -10px;
-  color: #62392D;
+  color: #cd222a;
   padding: .5vw;
   width: 8vw;
   height: auto !important;
@@ -220,7 +228,7 @@ input[type=checkbox] {
 }
 
 .tile {
-  border: 2px solid #62392D;
+  border: 2px solid #cd222a;
   margin: .2vw;
 }
 
@@ -243,12 +251,12 @@ label {
 }
 
 input[type=checkbox]:checked + div {
-  background-color: #62392D;
+  background-color: #cd222a;
   color: #fff;
 }
 
 div.tile:hover {
-  background-color: #BA8A43;
+  background-color: #f3ca31;
 }
 
 .unselect {
