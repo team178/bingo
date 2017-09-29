@@ -1,12 +1,12 @@
 values =
 [
-  "STEM over STEAM",
+  "STEM<br />vs<br />STEAM",
   "Scholarships<br />Apply, apply, apply!",
   "Water Game",
   "Past Game piece in Kickoff stream",
   "Havabanana Productions",
   "Dean Kamen is wearing denim",
-  "Woodie Flowers is an 8-bit charater",
+  "Woodie Flowers is an 8-bit character",
   "Gracious Professionals",
   "Dean's Homework",
   "Encryption Password is 1337",
@@ -33,7 +33,7 @@ values =
   '"Is this Battle Bots?"',
   "Someone wonders about scouting",
   "Field component plans don't make sense",
-  "People argue about a basic rule",
+  "People argue about a rule",
   "Swerve Drive",
   "Game pieces are used incorrectly",
   "Water game is <i>actually</i> confirmed",
