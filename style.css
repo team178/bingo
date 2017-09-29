@@ -29,6 +29,15 @@ body, button {
   align-items: center;
 }
 
+h1 {
+  margin-bottom: 5px;
+}
+
+h3 {
+  margin-top: 5px;
+  color: #dc6726;
+}
+
 #game-logo {
   width: 17vmax;
   max-width: 300px;
@@ -60,13 +69,13 @@ body, button {
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #009cd4;
+  background-color: #E7C02F;
 }
 .button:hover {
-  background-color: #1AA6D8;
+  background-color: #d0ad2b;
 }
 .button:active {
-  background-color: #33B0DD;
+  background-color: #b89a3b;
 }
 .button div {
   font-weight: bold;
@@ -228,7 +237,7 @@ input[type=checkbox] {
 }
 
 .tile {
-  border: 2px solid #cd222a;
+  border: 3px solid #cd222a;
   margin: .2vw;
 }
 
@@ -251,7 +260,8 @@ label {
 }
 
 input[type=checkbox]:checked + div {
-  background-color: #cd222a;
+  background-color: #009cd4;
+  border-color: #009cd4;
   color: #fff;
 }
 
