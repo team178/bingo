@@ -23,7 +23,7 @@ values =
   "Someone's theory about the game is right",
   "A theory is completely wrong",
   "Bumpers",
-  "Can't download the game manual",
+  "Can't get into the game manual",
   "The livestream goes down",
   "Someone mentions Coopertition",
   "Mentor Appreciation",
