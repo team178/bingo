@@ -226,6 +226,7 @@ i.shine {
   height: auto !important;
   min-width: 130px;
   min-height: 0px !important;
+  cursor: default;
 }
 #boardHeader > .tile:hover {
   background-color: #fff;
@@ -248,6 +249,7 @@ label {
   min-width: 130px;
   min-height: 130px;
   padding: .5vw;
+  cursor: pointer;
   display: -webkit-flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -257,6 +259,10 @@ label {
   -webkit-align-items: center;
   align-items: center;
   justify-content: center;
+}
+
+#freeSpace > label {
+  cursor: default;
 }
 
 input[type=checkbox]:checked + div {
