@@ -78,7 +78,7 @@ function createBoard() {
 function showInstructions(){
   swal({
     title: 'FRC Bingo!',
-    html: 'Welcome to FRC Kickoff Bingo! Fill out a card and get excited for <i>FIRST</i> POWER UP! Whenever something is said or done matches with your bingo card, click on the box to check it off. If you get 5 in a row in any direction - vertical, horizontal, or diagonal, click the BINGO button to win!',
+    html: 'Welcome to FRC Kickoff Bingo! Fill out a card and get excited for <i>FIRST</i> POWER UP! Whenever something is said or done that matches with your bingo card, click on the box to check it off. If you get 5 in a row in any direction (vertical, horizontal, or diagonal) click the BINGO button to win!',
     confirmButtonText: 'Let\'s play!'
   });
 }
