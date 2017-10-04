@@ -22,8 +22,8 @@ function generateBoard(container) {
   terms.splice(terms.length/2, 0, "FREE SPACE"); // Inserts the free space in the middle
 
   var headerRow = document.createElement('div');
-  $(headerRow).attr('class', 'row');
-  $(headerRow).attr('id', 'boardHeader');
+  headerRow.setAttribute('class', 'row');
+  headerRow.setAttribute('id', 'boardHeader');
     var content = 'BINGO';
     for (var i = 0; i < content.length; i++) {
       var headerTile = document.createElement('div');
@@ -100,12 +100,12 @@ function showWin(){
   });
 }
 
-function checkForWin() {
+function checkForWin(){
   var bingo = false;
   var checked = $('input:checkbox:checked');
 
   var allchecked = "";
-  for (var cb = 0; cb < checked.length; cb++) {
+  for (var cb = 0; cb < checked.length; cb++){
     allchecked += $(checked[cb]).attr('id');
   }
   // the stuff inside match is regex and regex is hell so i'm hardcoding it sorry not sorry
@@ -118,14 +118,14 @@ function checkForWin() {
   ((allchecked.match(/c0/g) || []).length) == 5 ||
   ((allchecked.match(/c2/g) || []).length) == 5 ||
   ((allchecked.match(/c3/g) || []).length) == 5 ||
-  ((allchecked.match(/c4/g) || []).length) == 5) {
+  ((allchecked.match(/c4/g) || []).length) == 5){
     console.log('yer a winner harry');
     bingo = true;
   } else {
-    if (allchecked.includes("r0c0") && allchecked.includes("r1c1") && allchecked.includes("r2c2") && allchecked.includes("r3c3") && allchecked.includes("r4c4")) {
+    if(allchecked.includes("r0c0")&&allchecked.includes("r1c1")&&allchecked.includes("r2c2")&&allchecked.includes("r3c3")&&allchecked.includes("r4c4")){
       console.log('still a winner harry - backward diagonal');
       bingo = true;
-    } else if (allchecked.includes("r0c4") && allchecked.includes("r1c3") && allchecked.includes("r2c2") && allchecked.includes("r3c1") && allchecked.includes("r4c0")) {
+    } else if(allchecked.includes("r0c4")&&allchecked.includes("r1c3")&&allchecked.includes("r2c2")&&allchecked.includes("r3c1")&&allchecked.includes("r4c0")){
       console.log('still a winner harry - forward diagonal');
       bingo = true;
     } else {
@@ -134,10 +134,9 @@ function checkForWin() {
   }
   toggleBingoWin(bingo);
 }
-
 function toggleBingoWin(bingo) {
   if(bingo == true) {
-    $("#freeSpace").html('<label><div class="button" id="bingo"><div>BINGO</div><i class="shine" id="shine1"></i><i class="shine" id="shine2"></i></div></label>');
+    $("#freeSpace").html('<label><div class="button" id="bingo"><div>BINGO!</div><i class="shine" id="shine1"></i><i class="shine" id="shine2"></i></div></label>');
     $("#bingo").click(showWin);
   } else {
     $("#freeSpace").html('<label for="r2c2"><span>FREE SPACE</span></label>');

@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
-@import url('https://fonts.googleapis.com/css?family=VT323');
+
+
+@font-face {
+  font-family: Skorzhen;
+  src: url(./assets/fonts/FTY-SKORZHEN-NCV.ttf);
+  font-weight: bold;
+}
 
 body, button {
   font-family: 'Crimson Text', serif;
@@ -40,7 +46,7 @@ h3 {
 }
 
 #title {
-  font-family: 'VT323', monospace;
+  font-family: Skorzhen;
   margin: 2vw;
   font-size: 1.75em;
 }
@@ -72,8 +78,8 @@ h3 {
   background-color: #b89a3b;
 }
 .button div {
-  font-family: 'VT323', monospace;
-  font-size: 30px;
+  font-weight: bold;
+  font-size: 20px;
   padding: 10px 15px 12px 15px;
   color: #fff;
 }
@@ -107,7 +113,7 @@ h3 {
 }
 #bingo div {
   padding: 5px 0px !important;
-  font-size: 2em !important;
+  font-size: 35px !important;
 }
 
 i.shine {
@@ -210,8 +216,8 @@ i.shine {
   flex-direction: row;
 }
 #boardHeader > .tile {
-  font-family: 'VT323', monospace;
-  font-size: 4em;
+  font-family: Skorzhen;
+  font-size: 3em;
   border: none !important;
   margin-bottom: -10px;
   color: #cd222a;
