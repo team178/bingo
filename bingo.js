@@ -22,8 +22,8 @@ function generateBoard(container) {
   terms.splice(terms.length/2, 0, "FREE SPACE"); // Inserts the free space in the middle
 
   var headerRow = document.createElement('div');
-  headerRow.setAttribute('class', 'row');
-  headerRow.setAttribute('id', 'boardHeader');
+  $(headerRow).attr('class', 'row');
+  $(headerRow).attr('id', 'boardHeader'); 
     var content = 'BINGO';
     for (var i = 0; i < content.length; i++) {
       var headerTile = document.createElement('div');
