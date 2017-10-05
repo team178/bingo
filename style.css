@@ -1,14 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
-
-
-@font-face {
-  font-family: Skorzhen;
-  src: url(./assets/fonts/FTY-SKORZHEN-NCV.ttf);
-  font-weight: bold;
-}
+@import url('https://fonts.googleapis.com/css?family=Dosis:600|Faustina:400,500');
 
 body, button {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Faustina', serif;
   color: #000;
 }
 
@@ -46,7 +39,8 @@ h3 {
 }
 
 #title {
-  font-family: Skorzhen;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
   margin: 2vw;
   font-size: 1.75em;
 }
@@ -62,6 +56,7 @@ h3 {
 /* Buttons */
 .button {
   position: relative;
+  font-weight: 400;
   border: none;
   display: inline;
   -webkit-border-radius: 5px;
@@ -78,7 +73,6 @@ h3 {
   background-color: #b89a3b;
 }
 .button div {
-  font-weight: bold;
   font-size: 20px;
   padding: 10px 15px 12px 15px;
   color: #fff;
@@ -95,7 +89,6 @@ h3 {
   align-items: center;
 }
 #footer .button {
-  font-weight: bold;
   font-size: 20px;
   padding: 10px 15px 12px 15px;
   margin: 5px;
@@ -207,7 +200,7 @@ i.shine {
   justify-content: center;
   align-items: center;
 
-  font-size: 1.5em;
+  font-size: 1.45em;
   text-align: center;
 }
 
@@ -216,7 +209,8 @@ i.shine {
   flex-direction: row;
 }
 #boardHeader > .tile {
-  font-family: Skorzhen;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
   font-size: 3em;
   border: none !important;
   margin-bottom: -10px;
@@ -244,11 +238,13 @@ input[type=checkbox] {
 
 label {
   display: block;
+  font-weight: 500;
+  line-height: 1.25em;
   width: 8vw;
   height: 8vw;
   min-width: 130px;
   min-height: 130px;
-  padding: .5vw;
+  padding: .4vw .5vw .6vw .5vw;
   cursor: pointer;
   display: -webkit-flexbox;
   display: -ms-flexbox;
