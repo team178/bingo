@@ -23,7 +23,7 @@ function generateBoard(container) {
 
   var headerRow = document.createElement('div');
   $(headerRow).attr('class', 'row');
-  $(headerRow).attr('id', 'boardHeader'); 
+  $(headerRow).attr('id', 'boardHeader');
     var content = 'BINGO';
     for (var i = 0; i < content.length; i++) {
       var headerTile = document.createElement('div');
