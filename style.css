@@ -100,12 +100,10 @@ h3 {
 }
 
 #bingo {
-  width: 8vw;
-  min-width: 130px;
-  padding: .5vw;
+  font-family: 'Dosis', sans-serif;
 }
 #bingo div {
-  padding: 5px 0px !important;
+  padding: 10px 10px;
   font-size: 35px !important;
 }
 
