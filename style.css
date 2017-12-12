@@ -210,7 +210,8 @@ i.shine {
   font-family: 'Dosis', sans-serif;
   font-weight: 600;
   font-size: 3em;
-  border: none !important;
+  border: 3px solid rgba(000,000,000,0.0);
+  border-bottom: none;
   margin-bottom: -10px;
   color: #cd222a;
   padding: .5vw;
