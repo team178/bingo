@@ -52,13 +52,16 @@ body, button {
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #A77C3C;
+  background-color: #A77C3C !important;
 }
 .button:hover {
-  background-color: #BA8A43;
+  background-color: #BA8A43 !important;
 }
 .button:active {
-  background-color: #C19656;
+  background-color: #C19656 !important;
+}
+.button:focus {
+  outline: 0;
 }
 .button div {
   font-weight: bold;
@@ -66,6 +69,10 @@ body, button {
   padding: 10px 15px 12px 15px;
   color: #fff;
 }
+button.button {
+  padding: 10px 15px 12px 15px !important;
+}
+
 
 /* Footer */
 #footer {
