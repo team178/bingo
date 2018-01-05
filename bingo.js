@@ -22,8 +22,8 @@ function generateBoard(container) {
   terms.splice(terms.length/2, 0, "FREE SPACE"); // Inserts the free space in the middle
 
   var headerRow = document.createElement('div');
-  headerRow.setAttribute('class', 'row');
-  headerRow.setAttribute('id', 'boardHeader');
+  $(headerRow).attr('class', 'row');
+  $(headerRow).attr('id', 'boardHeader');
     var content = 'BINGO';
     for (var i = 0; i < content.length; i++) {
       var headerTile = document.createElement('div');
@@ -78,8 +78,9 @@ function createBoard() {
 function showInstructions(){
   swal({
     title: 'FRC Bingo!',
-    html: 'Welcome to FRC Kickoff Bingo! Fill out a card and get excited for <i>FIRST</i> STEAMworks! Whenever something is said or done matches with your bingo card, click on the box to check it off. If you get 5 in a row in any direction - vertical, horizontal, or diagonal, click the BINGO button to win!',
-    confirmButtonText: 'Let\'s play!'
+    html: 'Welcome to FRC Kickoff Bingo! Fill out a card and get excited for <i>FIRST</i> POWER UP! Whenever something is said or done that matches with your bingo card, click on the box to check it off. If you get 5 in a row in any direction (vertical, horizontal, or diagonal) click the BINGO button to win!',
+    confirmButtonText: 'Let\'s play!',
+    confirmButtonClass: 'button'
   });
 }
 
@@ -91,12 +92,13 @@ function showWin(){
     onOpen: function(){
       $('<div></div>').attr("id","confetti").appendTo('.swal2-title');
       $('#social-share').appendTo('.swal2-content');
-      $("body").append('<div id="social-share"><iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Ffarmingtonrobotics.org%2Fbingo%2F&layout=button&size=small&mobile_iframe=true&width=65&height=20&appId" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><a href="https://twitter.com/share" class="twitter-share-button" data-text="BINGO! #omgrobots #FIRSTSTEAMWORKS Play #FRCKickoff Bingo at" data-url="http://farmingtonrobotics.org/bingo/" data-via="team178" data-related="FIRSTweets" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>');
+      $("body").append('<div id="social-share"><iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Ffarmingtonrobotics.org%2Fbingo%2F&layout=button&size=small&mobile_iframe=true&width=65&height=20&appId" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><a href="https://twitter.com/share" class="twitter-share-button" data-text="BINGO! #omgrobots #FIRSTPOWERUP Play #FRCKickoff Bingo at" data-url="http://farmingtonrobotics.org/bingo/" data-via="team178" data-related="FIRSTweets" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>');
       for(var i = 0; i < 50; i++){
         $('#confetti').append($('<i></i>'));
       }
     },
-    onClose: createBoard
+    onClose: createBoard,
+    confirmButtonClass: 'button'
   });
 }
 
