@@ -8,6 +8,7 @@ values =
   "Dean Kamen is wearing denim",
   "Woodie Flowers is an 8-bit character",
   "Corny references to 8-bit games",
+  "Knock-off Mario appears",
   "Famous 8-bit character shows up",
   "<i>FIRST</i>-related puns",
   "Gracious Professionals",
