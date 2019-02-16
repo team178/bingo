@@ -30,7 +30,7 @@ values =
   "Rule update before the end of the day",
   "Someone's theory about the game is right",
   "A theory is completely wrong",
-  "Bumpers",
+  "Bumpers are bad",
   "Can't get into the game manual",
   "The stream goes down",
   "Someone mentions Coopertition",
