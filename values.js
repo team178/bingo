@@ -29,7 +29,7 @@ values =
   "Sponsor animation loops more than once",
   "Rule update before the end of the day",
   "Someone's theory about the game is right",
-  "A theory is completely wrong",
+  "A theory is wrong",
   "Bumpers are bad",
   "Can't get into the game manual",
   "The stream goes down",
