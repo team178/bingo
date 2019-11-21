@@ -60,7 +60,7 @@ values =
   "Humans pretending to be robots",
   "Blobby humans in animation",
   "Animated robots are impossible",
-  "New logo revealed afterwards",
+  "New logo revealed",
   "New <i>FIRST</i> sponsor",
   "Surprise items in KOP",
   "Help for rookie teams",
@@ -69,5 +69,7 @@ values =
   "Robot does everything suggestion",
   "A game hint is taken seriously",
   '"Good luck, and see you at the competition!"',
-  "Something falls on Dozer"
+  "Something falls on Dozer",
+  "STAR WARS",
+  "Woodie Flowers Tribute <3"
 ];

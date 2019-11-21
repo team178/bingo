@@ -30,9 +30,9 @@ body.swal2-iosfix {
     background-color: rgba(0, 0, 0, 0.4); }
 
 .swal2-modal {
-  background-color: #fff;
-  border-radius: 0px;
-  border: solid #000 3px;
+  background-color: #FAB74F !important;
+  border-radius: 25px;
+  border: solid #FFF041 3px;
   box-sizing: border-box;
   text-align: center;
   margin: auto;
@@ -45,9 +45,9 @@ body.swal2-iosfix {
   .swal2-modal.swal2-loading {
     overflow-y: hidden; }
   .swal2-modal .swal2-title {
-    color: #000;
-    font-size: 25px;
-    font-family: 'Press Start 2P', cursive;
+    color: #003A5D;
+    font-size: 35px;
+    font-family: 'Concert One', decorative;
     text-align: center;
     font-weight: 600;
     text-transform: none;
@@ -142,7 +142,7 @@ body.swal2-iosfix {
     margin: 0;
     padding: 0;
     line-height: normal;
-    color: #000; }
+    color: #003A5D; }
   .swal2-modal .swal2-input,
   .swal2-modal .swal2-file,
   .swal2-modal .swal2-textarea,
