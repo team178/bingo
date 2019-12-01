@@ -68,6 +68,7 @@ h3 {
   background-color: #E7C02F !important;
   border: solid #000 3px !important;
   border-radius: 0 !important;
+  transition: .1s;
 }
 .button:hover {
   background-color: #d0ad2b !important;
@@ -257,6 +258,7 @@ input[type=checkbox] {
 .tile {
   border: 3px solid #cd222a;
   margin: .2vw;
+  transition: .1s;
 }
 
 label {

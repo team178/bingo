@@ -53,6 +53,7 @@ body, button {
   overflow: hidden;
   cursor: pointer;
   background-color: #A77C3C !important;
+  transition: .1s;
 }
 .button:hover {
   background-color: #BA8A43 !important;
@@ -229,6 +230,7 @@ input[type=checkbox] {
 .tile {
   border: 2px solid #62392D;
   margin: .2vw;
+  transition: .1s;
 }
 
 label {
