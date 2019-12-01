@@ -81,7 +81,7 @@ h3 {
 .button div {
   font-size: 20px;
   padding: 5px 12px 7px 12px;
-  color: #fff;
+  color: #000;
 }
 button.button {
   padding: 5px 12px 7px 12px !important;
@@ -104,7 +104,7 @@ button.button {
 }
 #footer a {
   font-weight: normal;
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 

@@ -70,7 +70,7 @@ body.swal2-iosfix {
     border: 0;
     border-radius: 3px;
     box-shadow: none;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     font-size: 20px;
     font-weight: 500;
@@ -273,7 +273,7 @@ body.swal2-iosfix {
       height: 24px;
       border-radius: 50%;
       background-color: #ea7d7d;
-      color: #fff;
+      color: #000;
       line-height: 24px;
       text-align: center;
       margin-right: 10px; }
@@ -420,7 +420,7 @@ body.swal2-iosfix {
   .swal2-progresssteps .swal2-progresscircle {
     background: #3085d6;
     border-radius: 2em;
-    color: #fff;
+    color: #000;
     height: 2em;
     line-height: 2em;
     text-align: center;

@@ -138,7 +138,7 @@ function checkForWin(){
 }
 function toggleBingoWin(bingo) {
   if(bingo == true) {
-    $("#freeSpace").html('<label><div class="button" id="bingo"><div>BINGO!</div><i class="shine" id="shine1"></i><i class="shine" id="shine2"></i></div></label>');
+    $("#freeSpace").html('<label><div class="button" id="bingo" accesskey="b"><div>BINGO!</div><i class="shine" id="shine1"></i><i class="shine" id="shine2"></i></div></label>');
     $("#bingo").click(showWin);
   } else {
     $("#freeSpace").html('<label for="r2c2"><span>FREE SPACE</span></label>');
