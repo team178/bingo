@@ -1,20 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis:600|Press+Start+2P');
-
 body, button {
-  font-family: 'Dosis', sans-serif;
   color: #000;
+  background-color: #fff;
 }
 
-/* Colors:
-  #cd222a
-  #009cd4
-  #fcf0b3
-  #f3ca31
-  #dc6726
-*/
-
-/* Header Elements */
-
+/* Header */
 #header {
   text-align: center;
   display: flex;
@@ -28,7 +17,6 @@ h1 {
 
 h3 {
   margin-top: 5px;
-  color: #dc6726;
 }
 
 #game-logo {
@@ -39,10 +27,8 @@ h3 {
 }
 
 #title {
-  font-family: 'Press Start 2P', cursive;
   margin: 2vw;
   padding-left: 10px;
-  font-size: 1em;
   transform: scale(1,1.25);
   -webkit-transform:scale(1,1.25); /* Safari and Chrome */
   -moz-transform:scale(1,1.25); /* Firefox */
@@ -56,36 +42,6 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-/* Buttons */
-.button {
-  position: relative;
-  font-weight: 400;
-  display: inline;
-  overflow: hidden;
-  cursor: pointer;
-  background-color: #E7C02F !important;
-  border: solid #000 3px !important;
-  border-radius: 0 !important;
-  transition: .1s;
-}
-.button:hover {
-  background-color: #d0ad2b !important;
-}
-.button:active {
-  background-color: #b89a3b !important;
-}
-.button:focus {
-  outline: 0;
-}
-.button div {
-  font-size: 20px;
-  padding: 5px 12px 7px 12px;
-  color: #000;
-}
-button.button {
-  padding: 5px 12px 7px 12px !important;
 }
 
 /* Footer */
@@ -104,21 +60,37 @@ button.button {
 }
 #footer a {
   font-weight: normal;
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
-#bingo {
-  font-family: 'Press Start 2P', cursive;
+/* Buttons */
+.button {
+  position: relative;
+  font-weight: 400;
+  display: inline;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color .1s, background-color .1s, border .1s;
 }
+.button:focus {
+  outline: 0;
+}
+.button div {
+  font-size: 20px;
+  padding: 5px 12px 7px 12px;
+  color: #fff;
+}
+button.button {
+  padding: 5px 12px 7px 12px !important;
+}
+
 #bingo div {
-  padding: 11px 7px 10px 12px;
-  font-size: 15px !important;
   transform: scale(1,1.5);
-  -webkit-transform:scale(1,1.5); /* Safari and Chrome */
-  -moz-transform:scale(1,1.5); /* Firefox */
-  -ms-transform:scale(1,1.5); /* IE 9+ */
-  -o-transform:scale(1,1.5); /* Opera */
+  -webkit-transform:scale(1,1.25); /* Safari and Chrome */
+  -moz-transform:scale(1,1.25); /* Firefox */
+  -ms-transform:scale(1,1.25); /* IE 9+ */
+  -o-transform:scale(1,1.25); /* Opera */
 }
 
 i.shine {
@@ -211,8 +183,6 @@ i.shine {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  font-size: 1.45em;
   text-align: center;
 }
 
@@ -221,18 +191,12 @@ i.shine {
   flex-direction: row;
 }
 
-#boardHeader {
-  margin-bottom: 10px;
-}
-
 #boardHeader > .tile {
-  font-family: 'Press Start 2P', cursive;
   font-weight: 600;
-  font-size: 3em;
-  border: 3px solid rgba(000,000,000,0.0);
+  border: 5px solid rgba(000,000,000,0.0);
   border-bottom: none;
   margin-bottom: -10px;
-  color: #cd222a;
+  color: #FAB74F;
   padding: .5vw;
   width: 8vw;
   height: auto !important;
@@ -255,9 +219,8 @@ input[type=checkbox] {
 }
 
 .tile {
-  border: 3px solid #cd222a;
   margin: .2vw;
-  transition: .1s;
+  transition: color .1s, background-color .1s, border .1s;
 }
 
 label {
@@ -285,15 +248,7 @@ label {
   cursor: default;
 }
 
-input[type=checkbox]:checked + div {
-  background-color: #009cd4;
-  color: #fff;
-}
-
-div.tile:hover {
-  background-color: #f3ca31;
-}
-
+/* Miscellaneous */
 .unselect {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Chrome/Safari/Opera */
@@ -304,7 +259,6 @@ div.tile:hover {
                                   not supported by any browser */
 }
 
-
 #social-share {
   display: none;
   margin-top: 7px;
@@ -314,7 +268,6 @@ div.tile:hover {
 .swal2-content #social-share {
   display: block;
 }
-
 
 /* Confetti. I can't believe this is for real. Based on COMPILED version of http://codepen.io/mikehobizal/pen/unvxa */
 @-webkit-keyframes bang {

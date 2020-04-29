@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:600|Press+Start+2P');
+
+body, button {
+  font-family: 'Dosis', sans-serif;
+}
+
+/* Colors:
+  #cd222a
+  #009cd4
+  #fcf0b3
+  #f3ca31
+  #dc6726
+*/
+
+/* Header */
+h3 {
+  color: #dc6726;
+}
+
+#title {
+  font-family: 'Press Start 2P', decorative;
+  font-size: 1em;
+}
+
+/* Footer */
+#footer a {
+  color: #000;
+}
+
+/* Buttons */
+.button {
+  background-color: #E7C02F !important;
+  border: solid #000 3px !important;
+  border-radius: 0 !important;
+}
+.button:hover {
+  background-color: #d0ad2b !important;
+}
+.button:active {
+  background-color: #b89a3b !important;
+}
+.button div {
+  color: #000;
+}
+
+#bingo {
+  font-family: 'Press Start 2P', decorative;
+}
+#bingo div {
+  padding: 11px 7px 10px 12px;
+  font-size: 15px !important;
+}
+
+/* Board */
+#board {
+  font-size: 1.45em;
+}
+
+#boardHeader {
+  margin-bottom: 10px;
+}
+#boardHeader > .tile {
+  font-family: 'Press Start 2P', decorative;
+  font-size: 3em;
+  border-width: 3px;
+  color: #cd222a;
+}
+
+/* Tiles */
+.tile {
+  border: 3px solid #cd222a;
+}
+
+input[type=checkbox]:checked + div {
+  background-color: #009cd4;
+  color: #fff;
+}
+
+div.tile:hover {
+  background-color: #f3ca31;
+}

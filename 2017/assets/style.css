@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+@font-face {
+  font-family: Skorzhen;
+  src: url(./FTY-SKORZHEN-NCV.ttf);
+  font-weight: bold;
+}
+
+body, button {
+    font-family: 'Crimson Text', serif;
+    color: #38322F;
+}
+
+/* Header */
+h1 {
+  margin: 0.67em 0;
+}
+
+h3 {
+  margin-top: 1em 0;
+}
+
+#title {
+  font-family: Skorzhen;
+  font-size: 1.75em;
+  padding: 0;
+  transform: scale(1,1);
+  -webkit-transform:scale(1,1); /* Safari and Chrome */
+  -moz-transform:scale(1,1); /* Firefox */
+  -ms-transform:scale(1,1); /* IE 9+ */
+  -o-transform:scale(1,1); /* Opera */
+}
+
+/* Buttons */
+.button {
+  border: none !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #A77C3C !important;
+}
+.button:hover {
+  background-color: #BA8A43 !important;
+}
+.button:active {
+  background-color: #C19656 !important;
+}
+.button div {
+  font-weight: bold;
+  padding: 10px 15px 12px 15px;
+}
+button.button {
+  padding: 10px 15px 12px 15px !important;
+}
+
+#bingo {
+  width: 8vw;
+  min-width: 130px;
+  padding: .5vw;
+}
+#bingo div {
+  padding: 5px 0px !important;
+  font-size: 35px !important;
+  transform: scale(1,1);
+  -webkit-transform:scale(1,1); /* Safari and Chrome */
+  -moz-transform:scale(1,1); /* Firefox */
+  -ms-transform:scale(1,1); /* IE 9+ */
+  -o-transform:scale(1,1); /* Opera */
+}
+
+/* Board */
+#board {
+  font-size: 1.5em;
+}
+
+#boardHeader > .tile {
+  font-family: Skorzhen;
+  font-size: 3em;
+  border-width: 2px;
+  color: #62392D;
+  transform: scale(1,1);
+  -webkit-transform:scale(1,1); /* Safari and Chrome */
+  -moz-transform:scale(1,1); /* Firefox */
+  -ms-transform:scale(1,1); /* IE 9+ */
+  -o-transform:scale(1,1); /* Opera */
+}
+
+/* Tiles */
+.tile {
+  border: 2px solid #62392D;
+}
+
+input[type=checkbox]:checked + div {
+  background-color: #62392D;
+  color: #fff;
+}
+
+div.tile:hover {
+  background-color: #BA8A43;
+  color: #fff;
+}
